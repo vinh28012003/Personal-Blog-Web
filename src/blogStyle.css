@@ -2,18 +2,39 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 120px;
-    background: #E1CDB5;
+
+
     margin: 0px;
-    
+
+}
+
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.myVideo {
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    overflow: hidden;
 }
 
 .container {
+    margin-top: 20px;
+    position: absolute;
     display: grid;
-    border-radius: 1%;
-    grid-template-columns: 300px 300px;
+    /* border-radius: 1%; */
+    grid-template-columns: 400px;
     grid-template-rows: 200px 600px;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
+    /* box-shadow: 0 3px 10px rgb(0 0 0 / 0.4); */
     /* grid-template-columns: repeat(3, 1fr); */
     /* Initially each element has its own row for small screens */
     grid-template-areas:
@@ -29,12 +50,13 @@ body {
 /* add css for nested grid here */
 .nestedGrid {
     display: grid;
+    grid-gap: 50px;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
 }
 
 .nestedGrid>* {
-    border: 2px solid aquamarine;
+    /* border: 2px solid aquamarine; */
 }
 
 .box {
@@ -45,26 +67,27 @@ body {
 .box_one {
     /* border-top-left-radius:5px 5px;
     border-top-right-radius:5px 5px; */
-    background: #F6E8EA;
+    /* background: #F6E8EA; */
     display: flex;
     align-items: center;
 }
 
 .box_two {
-    border: 1px solid blue;
-    background: white;
+    /* border: 1px solid blue;
+    background: white; */
 }
 
 .header {
     /* row start/column start/ row end/ column end */
-    border-top-left-radius: 10px 10px;
-    border-top-right-radius: 10px 10px;
+
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     text-align: center;
+
     grid-area: hd;
 }
+
 
 .headerFlex {
     display: flex;
@@ -75,14 +98,19 @@ body {
 }
 
 .footer {
-    border-bottom-left-radius: 10px 10px;
-    border-bottom-right-radius: 10px 10px;
-    grid-area: ft;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 4rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
 }
 
-.sidebar {
+/* .sidebar {
     grid-area: sd;
-}
+} */
 
 .content {
     grid-area: main;
@@ -91,17 +119,19 @@ body {
 /* If Screen Is Wide Enough */
 @media(min-width:1000px) {
     .container {
+        margin-top: 20px;
         display: grid;
-        border-radius: 1%;
+        /* border-radius: 1%;
 
-        box-shadow: 0 5px 15px rgb(0 0 0 / 0.6);
-        grid-template-columns: 300px 400px;
-        grid-template-rows: 100px 0px;
+        box-shadow: 0 5px 15px rgb(0 0 0 / 0.6); */
+        grid-template-columns: 1000px;
+        grid-template-rows: 170px 0px 0px;
         grid-template-areas:
             "hd hd hd hd hd hd hd hd"
-            "sd sd main main main main main main"
+            "main main main main main"
             "ft ft ft ft ft ft ft ft";
         /* border: 2px solid red; */
-        overflow:hidden;
+        overflow: hidden;
     }
+
 }

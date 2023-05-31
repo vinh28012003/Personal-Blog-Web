@@ -2,6 +2,7 @@
    
     animation: fadeIn 1s ease-in 2.5s forwards;
     animation-fill-mode: forwards;
+   
 }
 
 @keyframes fadeIn {
@@ -9,7 +10,7 @@
         opacity: 0;
     }
     to{
-        grid-template-rows: 100px 900px;
+        grid-template-rows: 150px 0px 500px;
         opacity: 1;
     }
 }

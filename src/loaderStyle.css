@@ -4,17 +4,17 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #9B7D59;
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-    -moz-animation: cssAnimation 1s ease-in 1.5s forwards;
+    -moz-animation: cssAnimation 1s ease-in 1.25s forwards;
     /* Firefox */
-    -webkit-animation: cssAnimation 1s ease-in 1.5s forwards;
+    -webkit-animation: cssAnimation 1s ease-in 1.25s forwards;
     /* Safari and Chrome */
-    -o-animation: cssAnimation 1s ease-in 1.5s forwards;
+    -o-animation: cssAnimation 1s ease-in 1.25s forwards;
     /* Opera */
-    animation: cssAnimation 1s ease-in 1.5s forwards;
+    animation: cssAnimation 1s ease-in 1.25s forwards;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
