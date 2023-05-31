@@ -4,12 +4,13 @@ body {
     align-items: center;
     padding: 120px;
     background: #E1CDB5;
-    height: 100vh;
+    margin: 0px;
+    
 }
 
 .container {
     display: grid;
-    border-radius:1%;
+    border-radius: 1%;
     grid-template-columns: 300px 300px;
     grid-template-rows: 200px 600px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
@@ -21,6 +22,7 @@ body {
         "main"
         "ft";
     /* border: 2px solid yellow; */
+    opacity: 0;
 }
 
 /* add css for nested grid here */
@@ -36,28 +38,45 @@ body {
 }
 
 .box {
-   
+
     background: #F8FA9D;
 }
-.box_one{
-    
-    background:#F6E8EA ;
-    display:flex;
+
+.box_one {
+    /* border-top-left-radius:5px 5px;
+    border-top-right-radius:5px 5px; */
+    background: #F6E8EA;
+    display: flex;
     align-items: center;
 }
-.box_two{
+
+.box_two {
     border: 1px solid blue;
     background: white;
 }
 
 .header {
     /* row start/column start/ row end/ column end */
-    border-top-left-radius:1%;
-    border-top-right-radius:1%;
+    border-top-left-radius: 10px 10px;
+    border-top-right-radius: 10px 10px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
     grid-area: hd;
 }
 
+.headerFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
 .footer {
+    border-bottom-left-radius: 10px 10px;
+    border-bottom-right-radius: 10px 10px;
     grid-area: ft;
 }
 
@@ -73,14 +92,16 @@ body {
 @media(min-width:1000px) {
     .container {
         display: grid;
-        border-radius:1%;
-        box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
-        grid-template-columns: 200px 300px;
-        grid-template-rows: 100px 600px;
+        border-radius: 1%;
+
+        box-shadow: 0 5px 15px rgb(0 0 0 / 0.6);
+        grid-template-columns: 300px 400px;
+        grid-template-rows: 100px 0px;
         grid-template-areas:
             "hd hd hd hd hd hd hd hd"
             "sd sd main main main main main main"
             "ft ft ft ft ft ft ft ft";
         /* border: 2px solid red; */
+        overflow:hidden;
     }
 }

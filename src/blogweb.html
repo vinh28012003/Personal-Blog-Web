@@ -6,15 +6,23 @@
     <title>Personal Blog Website</title>
     <link rel="stylesheet" href="blogStyle.css">
     <link rel="stylesheet" href="typographyFormats.css">
+    <link rel="stylesheet" href="loaderStyle.css">
+    <link rel="stylesheet" href="animationStyle.css">
 </head>
 
 <body>
-    <div class="container">
-        <div class="header box_one">
 
-            <h1 class="titleFormat">VTB</h1>
-            
+   
+
+    <div class="container fade-in">
+        <div class="header box_one">
+            <div class="headerFlex">
+                <p class="titleFormat">Vinh Tran</p>
+                <h1 class="titleFormat ">Making It Happen</h1>
+                <p class="titleFormat">Socials</p>
+            </div>
         </div>
+
         <div class="sidebar box">
             <h1>Blog Posts</h1><a href="post.html">Most Recent Post</a>
         </div>
@@ -37,6 +45,11 @@
         </div>
         <div class="footer box">Footer</div>
     </div>
+    <div class="loader-wrapper fade-out">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    
 </body>
 
 </html>
