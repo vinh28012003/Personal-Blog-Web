@@ -10,7 +10,7 @@
         opacity: 0;
     }
     to{
-        grid-template-rows: 150px 0px 500px;
+        grid-template-rows: 150px 0px 700px;
         opacity: 1;
     }
 }

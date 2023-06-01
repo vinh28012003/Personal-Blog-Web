@@ -17,11 +17,19 @@
     color: aliceblue;
     font-size: 15px;
 }
+h1,p,footer:hover{
+    cursor: pointer;
+}
+
+.titleFormat:active{
+    color: blue;
+
+}
 /* If Screen Is Wide Enough */
 @media(min-width:1000px) {
     .titleFormat_one{
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 40px;
+        font-size: 60px;
         color: aliceblue;
         
     }

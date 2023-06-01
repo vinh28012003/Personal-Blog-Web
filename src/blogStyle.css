@@ -48,20 +48,52 @@ video {
 
 /* add css for nested grid here */
 /* add css for nested grid here */
-.nestedGrid {
+#nestedGrid1 {
     display: grid;
-    grid-gap: 50px;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
+    
+    height: 25vh;
+    transition: 500ms;
+    grid-template-columns: 0.80fr 1fr;
+    
+}
+/* .leftArr, .rightArr{  
+    height: 25vh;
+    width: 100%;
+} */
+
+#nestedGrid2 {
+    display: grid;
+    
+    height: 25vh;
+    margin-top: 50px;
+    transition: 500ms;
+    grid-template-columns: 1fr 0.80fr;
+    
+}
+/* :where(.post1 .post2) {
+    background: navajowhite;
+    transition: 300ms;
 }
 
-.nestedGrid>* {
-    /* border: 2px solid aquamarine; */
+:where(.post1, .post2):hover {
+    background: crimson;
+} */
+
+#nestedGrid1:has(.post1:hover) {
+    grid-template-columns: 5fr 0.5fr;
+}
+
+#nestedGrid2:has(.post2:hover) {
+    grid-template-columns: 0.5fr 5fr;
+}
+
+.box:active{
+    background: rgba(30, 26, 58, 0.5);
 }
 
 .box {
-
-    background: #F8FA9D;
+    background-color: rgba(24, 90, 54, 0.5);;
+   
 }
 
 .box_one {
@@ -84,7 +116,7 @@ video {
     flex-direction: column;
     width: 100%;
     text-align: center;
-
+    margin-top: 10px;
     grid-area: hd;
 }
 
@@ -98,11 +130,11 @@ video {
 }
 
 .footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
-    height: 4rem;
-    display:flex;
+    height: 3rem;
+    display: flex;
     justify-content: center;
     align-items: center;
     background: rgba(0, 0, 0, 0.5);
@@ -114,6 +146,7 @@ video {
 
 .content {
     grid-area: main;
+    padding-top: 60px;
 }
 
 /* If Screen Is Wide Enough */
