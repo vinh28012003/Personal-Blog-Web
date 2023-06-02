@@ -51,7 +51,7 @@ video {
 #nestedGrid1 {
     display: grid;
     
-    height: 25vh;
+    height: 27vh;
     transition: 500ms;
     grid-template-columns: 0.80fr 1fr;
     
@@ -64,7 +64,7 @@ video {
 #nestedGrid2 {
     display: grid;
     
-    height: 25vh;
+    height: 27vh;
     margin-top: 50px;
     transition: 500ms;
     grid-template-columns: 1fr 0.80fr;
@@ -84,11 +84,12 @@ video {
 }
 
 #nestedGrid2:has(.post2:hover) {
+    transition-duration: 2s;
     grid-template-columns: 0.5fr 5fr;
 }
 
 .box:active{
-    background: rgba(30, 26, 58, 0.5);
+    background: rgba(204, 202, 212, 0.5);
 }
 
 .box {

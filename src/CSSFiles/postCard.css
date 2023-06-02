@@ -1,0 +1,79 @@
+.post1{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 100% 0;
+   
+    
+}
+.post1:hover{
+    
+    
+    animation: slowSlideRight;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    grid-template-columns: 30% 70%;
+  
+}
+@keyframes slowSlideRight {
+    0%   {grid-template-columns: 100% 0;}
+    
+    100% {grid-template-columns: 30% 70%;}
+}
+.postCardContent_1{
+    display:none;
+    
+}
+.postCardContent_2{
+    display:none;
+    
+}
+.post1:hover> .postCardContent_1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    background-color: rgba(65, 65, 65, 0.5);;
+}
+.post2:hover> .postCardContent_2{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: right;
+    position: relative;
+    background-color: rgba(65, 65, 65, 0.5);;
+}
+.post2{
+    display: grid;
+    grid-template-columns: 100% 0%;
+  ;
+} 
+.post2:hover{
+    
+    animation: slowSlide;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+}
+@keyframes slowSlide {
+    0%   {grid-template-columns: 0% 100%;}
+    
+    100% {grid-template-columns: 70% 30%;}
+}
+.postCardTitle_1{
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:aliceblue;
+    font-size:25px
+    
+}
+a{
+    text-decoration:none;
+}
+.postCardTitle_2{
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:aliceblue;
+    font-size:25px
+}
