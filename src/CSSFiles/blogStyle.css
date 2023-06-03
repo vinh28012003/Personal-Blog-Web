@@ -87,14 +87,16 @@ video {
     transition-duration: 2s;
     grid-template-columns: 0.5fr 5fr;
 }
-
+.box:hover{
+    background-color: rgba(0,46,44, 0.8);
+}
 .box:active{
     background: rgba(204, 202, 212, 0.5);
 }
 
 .box {
-    background-color: rgba(24, 90, 54, 0.5);;
-   
+    background-color: rgba(0,46,44, 0.5);
+
 }
 
 .box_one {

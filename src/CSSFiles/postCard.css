@@ -1,79 +1,185 @@
-.post1{
+.post1 {
     display: grid;
     width: 100%;
     grid-template-columns: 100% 0;
-   
-    
+
+
 }
-.post1:hover{
-    
-    
+
+.post1:hover {
+
+
     animation: slowSlideRight;
     animation-fill-mode: forwards;
     animation-duration: 2s;
     grid-template-columns: 30% 70%;
-  
+
 }
+
 @keyframes slowSlideRight {
-    0%   {grid-template-columns: 100% 0;}
-    
-    100% {grid-template-columns: 30% 70%;}
+    0% {
+        grid-template-columns: 100% 0;
+    }
+
+    100% {
+        grid-template-columns: 30% 70%;
+    }
 }
-.postCardContent_1{
-    display:none;
-    
+
+.postCardContent_1 {
+    display: none;
+
 }
-.postCardContent_2{
-    display:none;
-    
+
+.postCardContent_2 {
+    display: none;
+
 }
-.post1:hover> .postCardContent_1{
+
+.panel_1 {
+    position: relative;
+    text-decoration: none;
+    color: aliceblue;
+    width: 8vw;
+    height: 76%;
+    text-orientation: upright;
+    padding: 5%;
+
+}
+
+.content_hook_1 {
+    font-size: 0.5rem;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.content_hook_2 {
+    font-size: 0.5rem;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: right;
+}
+
+.panel_2 {
+    position: relative;
+    background-color: rgba(132,105,84, 0.7);
+    
+    width: 80%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    position: relative;
-    background-color: rgba(65, 65, 65, 0.5);;
+
 }
-.post2:hover> .postCardContent_2{
+.content_item {
+    
     display: flex;
-    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-style: solid;
+    color: white;
+    border-width: thin;
+    border-color: rgba(154, 156, 156, 0.5);;
+    width: 100%;
+   
+    
+}
+
+.post1:hover>.postCardContent_1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    position: relative;
+    background-color: rgba(245, 222, 179, 0.5);
+}
+
+.post2:hover>.postCardContent_2 {
+    display: flex;
+    flex-direction: row-reverse;
     justify-content: right;
     position: relative;
-    background-color: rgba(65, 65, 65, 0.5);;
+    background-color: rgba(245, 222, 179, 0.5);
+    
 }
-.post2{
+
+.post2 {
     display: grid;
     grid-template-columns: 100% 0%;
-  ;
-} 
-.post2:hover{
-    
+    ;
+}
+
+.post2:hover {
+
     animation: slowSlide;
     animation-fill-mode: forwards;
     animation-duration: 2s;
 }
+
 @keyframes slowSlide {
-    0%   {grid-template-columns: 0% 100%;}
-    
-    100% {grid-template-columns: 70% 30%;}
+    0% {
+        grid-template-columns: 0% 100%;
+    }
+
+    100% {
+        grid-template-columns: 70% 30%;
+    }
 }
-.postCardTitle_1{
-    
-    display:flex;
+
+.postCardTitle_1 {
+
+    display: flex;
     justify-content: center;
     align-items: center;
-    color:aliceblue;
-    font-size:25px
-    
+    color: aliceblue;
+    font-size: 10px
 }
-a{
-    text-decoration:none;
+
+a {
+    text-decoration: none;
 }
-.postCardTitle_2{
-    
-    display:flex;
+
+.postCardTitle_2 {
+
+    display: flex;
     justify-content: center;
     align-items: center;
-    color:aliceblue;
-    font-size:25px
+    color: aliceblue;
+    font-size: 10px
+}
+
+@media(min-width:1000px) {
+
+    .postCardTitle_1 {
+        font-size: 25px;
+    }
+
+    .postCardTitle_2 {
+        font-size: 25px;
+    }
+    .content_item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        border-style: solid;
+        color: white;
+        font-size: 15px;
+        border-width: thin;
+        border-color: rgba(154, 156, 156, 0.5);;
+        width: 100%;
+    }
+    .content_hook_1 {
+        font-size: 20px;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+    .content_hook_2 {
+        font-size: 20px;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        text-align: right;
+    }
+    
 }
