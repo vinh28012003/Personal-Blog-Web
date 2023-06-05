@@ -155,13 +155,13 @@ video {
 /* If Screen Is Wide Enough */
 @media(min-width:1000px) {
     .container {
-        margin-top: 20px;
+        
         display: grid;
         /* border-radius: 1%;
 
         box-shadow: 0 5px 15px rgb(0 0 0 / 0.6); */
         grid-template-columns: 1000px;
-        grid-template-rows: 170px 0px 0px;
+        grid-template-rows: 200px 0px 0px;
         grid-template-areas:
             "hd hd hd hd hd hd hd hd"
             "main main main main main"

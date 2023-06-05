@@ -5,6 +5,9 @@
     font-size: 20px;
     text-decoration: underline;
 }
+.titleFormat:hover{
+    color:aqua;
+}
 .titleFormat_one{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     /* color: aliceblue; */
@@ -29,7 +32,7 @@ h1,p,footer:hover{
 @media(min-width:1000px) {
     .titleFormat_one{
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 70px;
+        font-size: 80px;
         color: aliceblue;
         
     }

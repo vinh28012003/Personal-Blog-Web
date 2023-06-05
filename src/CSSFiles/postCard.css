@@ -86,22 +86,36 @@
 }
 
 .post1:hover>.postCardContent_1 {
+    opacity: 0;
     display: flex;
     flex-direction: row;
     justify-content: left;
     position: relative;
+    animation: 1s fadeOutDown 300ms;
+    animation-fill-mode: forwards;
     background-color: rgba(245, 222, 179, 0.5);
 }
 
 .post2:hover>.postCardContent_2 {
+    opacity: 0;
     display: flex;
     flex-direction: row-reverse;
     justify-content: right;
     position: relative;
+    animation: 1s fadeOutDown 350ms;
+    animation-fill-mode: forwards;
     background-color: rgba(245, 222, 179, 0.5);
     
 }
+@keyframes fadeOutDown {
+    from{
+        opacity: 0;
 
+    }   
+    to{
+        opacity: 1;
+    } 
+}
 .post2 {
     display: grid;
     grid-template-columns: 100% 0%;
