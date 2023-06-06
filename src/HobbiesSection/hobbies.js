@@ -14,15 +14,18 @@ function scrollFunction() {
 
 
 function navFunction() {
-    console.log(window.location.href);
-    var path = window.location.href;
-    if (path == "http://127.0.0.1:5500/src/HobbiesSection/hobbies.html" || path == "http://127.0.0.1:5500/src/HobbiesSection/hobbies.html#mangas") {
+    var path = String(window.location.href);
+    var lastFive = path.substr(path.length - 8);
+    
+    console.log(lastFive);
+    if (lastFive == "ies.html") {
+        
         document.getElementById("mangas").style.background = "#0005";
-    } else if (path=="http://127.0.0.1:5500/src/HobbiesSection/HobbiesCategories/manhwa.html") {
+    } else if (lastFive=="hwa.html") {
         document.getElementById("manhwas").style.background = "#0005";
-    }else if (path=="http://127.0.0.1:5500/src/HobbiesSection/HobbiesCategories/tvshow.html") {
+    }else if (lastFive=="how.html") {
         document.getElementById("tvshows").style.background = "#0005";
-    }else if (path=="http://127.0.0.1:5500/src/HobbiesSection/HobbiesCategories/videogame.html") {
+    }else if (lastFive=="ame.html") {
         document.getElementById("videogames").style.background = "#0005";
     }
 }
