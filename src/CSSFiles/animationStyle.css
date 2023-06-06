@@ -8,6 +8,10 @@
     animation: fadeInForAcademic 1s ease-in 2.5s forwards;
     animation-fill-mode: forwards;
 }
+.hobbiesContainer{
+    animation: fadeInForHobbies 1s ease-in 2.5s forwards;
+    animation-fill-mode: forwards;
+}
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -19,6 +23,16 @@
 }
 
 @keyframes fadeInForAcademic {
+    from {
+        opacity: 0;
+    }
+    to{
+        grid-template-rows: 200px 0px 1500px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInForHobbies {
     from {
         opacity: 0;
     }

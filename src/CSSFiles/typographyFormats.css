@@ -3,8 +3,11 @@
     /* color: aliceblue; */
     color: aliceblue;
     font-size: 20px;
-    text-decoration: underline;
+    text-decoration: none;
+    
 }
+
+
 .titleFormat:hover{
     color:aqua;
 }
@@ -37,4 +40,9 @@ h1,p,footer:hover{
         
     }
     
+    
+}
+
+a{
+    text-decoration: none;
 }

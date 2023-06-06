@@ -1,6 +1,6 @@
 
 
-.academicContainer {
+.hobbiesContainer {
     margin-top: 20px;
     position: absolute;
     display: grid;
@@ -19,7 +19,7 @@
     opacity: 0;
 }
 
-.academicGrid_1 {
+.hobbiesGrid_1 {
 
     display: grid;
 
@@ -29,7 +29,7 @@
 
 }
 
-.academicGrid_2 {
+.hobbiesGrid_2 {
 
     display: grid;
     height: 35vh;
@@ -66,7 +66,7 @@
     grid-template-columns: 0.6fr 0.9fr;
 }
 
-.schoolContentItems {
+.hobbiesContentItems {
     display: flex;
     width: 100%;
     margin-top: 20px;
@@ -81,7 +81,7 @@
 
 
 @media(min-width:1000px) {
-    .academicContainer {
+    .hobbiesContainer {
 
         display: grid;
         /* border-radius: 1%;
@@ -96,7 +96,7 @@
         /* border: 2px solid red; */
         overflow: hidden;
     }
-    .schoolContentItems {
+    .hobbiesContentItems {
         display: flex;
         width: 100%;
         margin-top: 20px;

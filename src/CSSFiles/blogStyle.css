@@ -2,8 +2,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-
     margin: 0px;
 
 }
@@ -28,7 +26,7 @@ video {
 }
 
 .container {
-    margin-top: 20px;
+    
     position: absolute;
     display: grid;
     /* border-radius: 1%; */
@@ -149,7 +147,7 @@ video {
 
 .content {
     grid-area: main;
-    padding-top: 60px;
+    padding-top: -70px;
 }
 
 /* If Screen Is Wide Enough */
@@ -169,5 +167,8 @@ video {
         /* border: 2px solid red; */
         overflow: hidden;
     }
-
+    .content {
+        grid-area: main;
+        padding-top: 70px;
+    }
 }
