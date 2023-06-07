@@ -1,4 +1,7 @@
-
+@import    "../CSSFiles/blogStyle.css";
+@import "../CSSFiles/typographyFormats.css";
+@import "../CSSFiles/loaderStyle.css";
+@import "../CSSFiles/animationStyle.css";
 
 .academicContainer {
     margin-top: 20px;

@@ -1,3 +1,8 @@
+@import   "typographyFormats.css";
+@import "loaderStyle.css";
+@import  "animationStyle.css";
+@import  "postCard.css";
+
 body {
     display: flex;
     flex-direction: column;
