@@ -81,7 +81,57 @@
 .content_title_right {
     width: 100%;
 }
+nav {
+    position: fixed;
+    width: 100%;
+    height: 49px;
+    z-index: 1;
+    
+    line-height: 50px;
+}
+ul {
+    margin-top: -1.75px;
+}
+nav ul {
+    display: flex;
 
+    justify-content: center;
+    align-self: center;
+}
+
+nav ul li {
+    list-style-type: none;
+    /* display: inline-block; */
+    transition: 0.7s all;
+}
+
+nav ul li:hover {
+    background-color: #088;
+}
+nav ul li a:active{
+    color: aquamarine;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    
+    padding: 30px;
+}
+#academic_nav{
+    opacity: 0;
+    animation: acaNavAnime 1s ease-in 2.5s forwards;
+    
+    animation-fill-mode: forwards;
+}
+@keyframes acaNavAnime {
+    from {
+        opacity: 0;
+    }
+    to {
+       
+        opacity: 1;
+    }
+}
 
 @media(min-width:1000px) {
     .academicContainer {
