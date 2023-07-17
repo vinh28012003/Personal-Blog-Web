@@ -1,13 +1,14 @@
-@import   "typographyFormats.css";
+@import "typographyFormats.css";
 @import "loaderStyle.css";
-@import  "animationStyle.css";
-@import  "postCard.css";
+@import "animationStyle.css";
+@import "postCard.css";
 
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0px;
+   
 
 }
 
@@ -31,7 +32,7 @@ video {
 }
 
 .container {
-    
+
     position: absolute;
     display: grid;
     /* border-radius: 1%; */
@@ -47,18 +48,28 @@ video {
         "ft";
     /* border: 2px solid yellow; */
     opacity: 0;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    overflow: visible;
+
+}
+
+.container::-webkit-scrollbar {
+    display: none;
 }
 
 /* add css for nested grid here */
 /* add css for nested grid here */
 #nestedGrid1 {
     display: grid;
-    
+
     height: 27vh;
     transition: 500ms;
     grid-template-columns: 0.80fr 1fr;
-    
+
 }
+
 /* .leftArr, .rightArr{  
     height: 25vh;
     width: 100%;
@@ -66,13 +77,39 @@ video {
 
 #nestedGrid2 {
     display: grid;
-    
+
     height: 27vh;
     margin-top: 50px;
     transition: 500ms;
     grid-template-columns: 1fr 0.80fr;
+
+}
+
+.blogCard {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    height: 27vh;
+    width: 100%;
+    margin-top: 50px;
+    z-index: 1;
     
 }
+
+.blogCard_content {
+   
+    display: flex;
+    height: 27vh;
+    align-items: center;
+    justify-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: aliceblue;
+}
+.padder{
+    height: 10vh;
+}
+
 /* :where(.post1 .post2) {
     background: navajowhite;
     transition: 300ms;
@@ -90,15 +127,17 @@ video {
     transition-duration: 2s;
     grid-template-columns: 0.5fr 5fr;
 }
-.box:hover{
-    background-color: rgba(0,46,44, 0.8);
+
+.box:hover {
+    background-color: rgba(0, 46, 44, 0.8);
 }
-.box:active{
+
+.box:active {
     background: rgba(204, 202, 212, 0.5);
 }
 
 .box {
-    background-color: rgba(0,46,44, 0.5);
+    background-color: rgba(0, 46, 44, 0.5);
 
 }
 
@@ -158,22 +197,39 @@ video {
 /* If Screen Is Wide Enough */
 @media(min-width:1000px) {
     .container {
-        
+
         display: grid;
         /* border-radius: 1%;
 
         box-shadow: 0 5px 15px rgb(0 0 0 / 0.6); */
         grid-template-columns: 1000px;
-        grid-template-rows: 200px 0px 0px;
+        grid-template-rows: 100% 0px 0px;
         grid-template-areas:
             "hd hd hd hd hd hd hd hd"
             "main main main main main"
             "ft ft ft ft ft ft ft ft";
         /* border: 2px solid red; */
-        overflow: hidden;
+        overflow: scroll;
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        
     }
+
     .content {
         grid-area: main;
         padding-top: 70px;
+        
+    }
+
+    .blogCard_content {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 60px;
+        color: aliceblue;
     }
 }

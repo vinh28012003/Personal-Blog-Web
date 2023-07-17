@@ -6,9 +6,11 @@
 }
 .academicContainer{
     animation: fadeInForAcademic 1s ease-in 2.5s forwards;
+    overflow: hidden;
     animation-fill-mode: forwards;
 }
 .hobbiesContainer{
+    overflow: hidden;
     animation: fadeInForHobbies 1s ease-in 2.5s forwards;
     animation-fill-mode: forwards;
 }
