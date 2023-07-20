@@ -19,7 +19,7 @@
         opacity: 0;
     }
     to{
-        grid-template-rows: 150px 0px 700px;
+        grid-template-rows: 150px 0px auto;
         opacity: 1;
     }
 }

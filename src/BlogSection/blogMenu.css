@@ -1,0 +1,41 @@
+body{
+    background-color: darkcyan;
+}
+
+
+.blogCardContainer{
+    width:100%;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    align-items: center;
+    background: red;
+    overflow: auto;
+}
+.blogCard{
+    width:50vw;
+    height: 25vh;
+    border-radius: 25px;
+    display: flex;
+    padding:10px;
+
+}
+.img{
+    width:100%;
+    height: 100%;
+    border-radius: 25px;
+}
+.cardContent{
+    border-radius: 25px;
+    width:100%;
+    height: 100%;
+    background: blue;
+}
+
+/* If Screen Is Wide Enough */
+@media(min-width:1000px) {
+   
+}
+
+

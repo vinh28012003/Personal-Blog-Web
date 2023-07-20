@@ -156,7 +156,7 @@ video {
 
 .header {
     /* row start/column start/ row end/ column end */
-
+    
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -192,6 +192,7 @@ video {
 .content {
     grid-area: main;
     padding-top: -70px;
+    overflow: auto;
 }
 
 /* If Screen Is Wide Enough */
@@ -202,7 +203,7 @@ video {
         /* border-radius: 1%;
 
         box-shadow: 0 5px 15px rgb(0 0 0 / 0.6); */
-        grid-template-columns: 1000px;
+        grid-template-columns: 1500px;
         grid-template-rows: 100% 0px 0px;
         grid-template-areas:
             "hd hd hd hd hd hd hd hd"
@@ -219,7 +220,7 @@ video {
     .content {
         grid-area: main;
         padding-top: 70px;
-        
+        overflow: auto;
     }
 
     .blogCard_content {
