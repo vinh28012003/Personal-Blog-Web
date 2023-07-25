@@ -192,7 +192,7 @@ video {
 .content {
     grid-area: main;
     padding-top: -70px;
-    overflow: auto;
+
 }
 
 /* If Screen Is Wide Enough */
@@ -220,7 +220,7 @@ video {
     .content {
         grid-area: main;
         padding-top: 70px;
-        overflow: auto;
+        
     }
 
     .blogCard_content {
