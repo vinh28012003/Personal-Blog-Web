@@ -6,33 +6,61 @@
     <title>Personal Blog Website</title>
     <link rel="stylesheet" href="../../CSSFiles/blogStyle.css">
     <link rel="stylesheet" href="./blogPost.css">
+    <!-- i'm importing fontawesome's icons from a cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 
-<body>
+<body class="bgColor">
+    <script type="text/javascript" src="blogPost.js"></script>
 
 
+    <nav class="fade-in">
+        <div class="navbar">
+            <div class="brand">
+                Making it happen
+            </div>
+            <ul class="menu">
+                <i class="fa-solid fa-xmark navClose"></i> <!-- close menu icon -->
+                <li>
+                    <a href="../../LandingPageSection/blogweb.html">Home</a>
+                </li>
+                <li>
+                    <a href="../blogMenu.html">Blog Menu</a>
+                </li>
+
+                <li>
+                    <a>Socials</a>
+                    <i class="fa-solid fa-chevron-down arrow"></i> <!-- arrow icon -->
+                    <ul class="sub-menu">
+                        <!-- submenu -->
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Linkedin</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+
+            <i class="fa-solid fa-bars navOpen"></i> <!-- open menu icon -->
+        </div>
+    </nav>
 
     <div class="loader-wrapper">
         <span class="loader"><span class="loader-inner"></span></span>
     </div>
 
     <div class="container fade-in">
-        <div class="header box_one">
-            <div class="headerImg"></div>
-            <div class="headerFlex">
+        
 
-                <a href="../../LandingPageSection/blogweb.html">
-                    <p class="titleFormat">Home</p>
-                </a>
-                <h1 class="titleFormat_one ">Making It Happen</h1>
-                <p class="titleFormat">Socials</p>
-            </div>
+        <div class="headerContainer">
+
+            <h1 class="blogHeadline">“When Diet Is Wrong, Medicine Is Of No Use. When Diet Is Correct, Medicine Is Of No
+                Need.”<br/> – Ayurvedic Proverb</h1>
+
         </div>
 
-
         <div class="content">
-
             
+
         </div>
 
     </div>
