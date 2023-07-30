@@ -1,9 +1,9 @@
 .gradientBG {
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-color: #0061FF;
+    /* background-repeat: no-repeat;
+    background-attachment: fixed; */
+    background-color: #ADC698;
     /* For browsers that do not support gradients */
-    background-image: linear-gradient(#0061FF,#0066FF, #60efff);
+    /* background-image: linear-gradient(#0061FF,#0066FF, #60efff); */
 }
 
 
@@ -40,7 +40,7 @@ figcaption {
 
 .blogCard {
     width: 25vw;
-    height: 52vh;
+    height: 20vh;
     border-radius: 25px;
     display: flex;
     flex-direction: column;
@@ -68,6 +68,21 @@ figcaption {
 
 /* If Screen Is Wide Enough */
 @media(min-width:1000px) {
+    .blogCard {
+    width: 25vw;
+    height: 60vh;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+}
+
+.imgContainer {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+}
     .blogHeaderText {
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         /* color: aliceblue; */

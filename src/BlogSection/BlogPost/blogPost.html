@@ -6,7 +6,6 @@
     <title>Personal Blog Website</title>
     <link rel="stylesheet" href="../../CSSFiles/blogStyle.css">
     <link rel="stylesheet" href="./blogPost.css">
-    <!-- i'm importing fontawesome's icons from a cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 
@@ -14,13 +13,13 @@
     <script type="text/javascript" src="blogPost.js"></script>
 
 
-    <nav class="fade-in">
+    <nav class="fadeInOnly">
         <div class="navbar">
             <div class="brand">
                 Making it happen
             </div>
             <ul class="menu">
-                <i class="fa-solid fa-xmark navClose"></i> <!-- close menu icon -->
+                <i class="fa-solid fa-xmark navClose"></i>
                 <li>
                     <a href="../../LandingPageSection/blogweb.html">Home</a>
                 </li>
@@ -30,9 +29,8 @@
 
                 <li>
                     <a>Socials</a>
-                    <i class="fa-solid fa-chevron-down arrow"></i> <!-- arrow icon -->
+                    <i class="fa-solid fa-chevron-down arrow"></i>
                     <ul class="sub-menu">
-                        <!-- submenu -->
                         <li><a href="#">Facebook</a></li>
                         <li><a href="#">Linkedin</a></li>
                     </ul>
@@ -40,35 +38,53 @@
 
             </ul>
 
-            <i class="fa-solid fa-bars navOpen"></i> <!-- open menu icon -->
+            <i class="fa-solid fa-bars navOpen"></i>
         </div>
     </nav>
 
-    <div class="loader-wrapper">
+    <!-- <div class="loader-wrapper">
         <span class="loader"><span class="loader-inner"></span></span>
-    </div>
+    </div> -->
 
-    <div class="container fade-in">
-        
+    <div class="blogPostContainer fadeInOnly">
 
-        <div class="headerContainer">
 
-            <h1 class="blogHeadline">“When Diet Is Wrong, Medicine Is Of No Use. When Diet Is Correct, Medicine Is Of No
-                Need.”<br/> – Ayurvedic Proverb</h1>
+        <div class="headerContainer fadeInOnly">
+
+            <h1 class="blogHeadline fadeInOnly">“When Diet Is Wrong, Medicine Is Of No Use. When Diet Is Correct,
+                Medicine Is Of No
+                Need.”<br /> – Ayurvedic Proverb</h1>
+            <div class="aboutSection">
+                <h3>Vinh Tran</h3>
+                <p> Student at Purdue University</p>
+                <span>A Computer Science major student at Purdue University 2021-2025. A person who not only interested
+                    in computer, but also curious in healthy life style.</span>
+
+            </div>
 
         </div>
-
-        <div class="content">
+        <div class="fadeInOnly">
+            <img class="postPicture" src="../../img/Eating.jpeg" />
+        </div>
+        <div class="contentPanel fadeInOnly">
+            <span>
+                Eating healthy is one of the hardest thing I have face since the start of my college life.
+                However, the result from those hardship will improve not only your health but also your daily routine or work.
+                <p>
+                    In this blog, I will share with you the tip and trick that I used in my eating habbits to improve my overall health.
+                </p>
+            </span>
             
-
+            <img class="postPicture" src="../../img/Eating.jpeg" />
         </div>
 
+
     </div>
 
 
-    <div class="footer footerFont">
+    <!-- <div class="footer footerFont">
         <footer>&copy; Copyright 2023 Vinh Tran</footer>
-    </div>
+    </div> -->
 
 
 

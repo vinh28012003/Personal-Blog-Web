@@ -14,6 +14,19 @@
     animation: fadeInForHobbies 1s ease-in 2.5s forwards;
     animation-fill-mode: forwards;
 }
+.fadeInOnly{
+    animation: fade-in-only 1s ease-in 2.5s forwards;
+    animation-fill-mode: forwards;
+}
+@keyframes fade-in-only {
+    from {
+        opacity: 0;
+    }
+    to{
+       
+        opacity: 1;
+    }
+}
 @keyframes fadeIn {
     from {
         opacity: 0;
