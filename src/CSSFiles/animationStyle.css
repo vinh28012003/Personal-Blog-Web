@@ -15,7 +15,8 @@
     animation-fill-mode: forwards;
 }
 .fadeInOnly{
-    animation: fade-in-only 1s ease-in 2.5s forwards;
+    animation: fade-in-only 0s ease-in 0s forwards; 
+    /* animation: fade-in-only 1s ease-in 2.5s forwards; */
     animation-fill-mode: forwards;
 }
 @keyframes fade-in-only {

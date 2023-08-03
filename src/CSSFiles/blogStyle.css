@@ -8,7 +8,7 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 0;
-   
+
 
 }
 
@@ -93,11 +93,11 @@ video {
     width: 100%;
     margin-top: 50px;
     z-index: 1;
-    
+
 }
 
 .blogCard_content {
-   
+
     display: flex;
     height: 27vh;
     align-items: center;
@@ -106,7 +106,8 @@ video {
     font-size: 20px;
     color: aliceblue;
 }
-.padder{
+
+.padder {
     height: 10vh;
 }
 
@@ -114,7 +115,7 @@ video {
     background: navajowhite;
     transition: 300ms;
 }
-
+ 
 :where(.post1, .post2):hover {
     background: crimson;
 } */
@@ -156,7 +157,7 @@ video {
 
 .header {
     /* row start/column start/ row end/ column end */
-    
+
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -192,7 +193,7 @@ video {
 .content {
     grid-area: main;
     padding-top: -70px;
-
+    width: 100%;
 }
 
 /* If Screen Is Wide Enough */
@@ -201,8 +202,9 @@ video {
 
         display: grid;
         /* border-radius: 1%;
-
+        
         box-shadow: 0 5px 15px rgb(0 0 0 / 0.6); */
+        
         grid-template-columns: 1500px;
         grid-template-rows: 100% 0px 0px;
         grid-template-areas:
@@ -213,9 +215,9 @@ video {
         overflow: scroll;
         -ms-overflow-style: none;
         /* IE and Edge */
-        scrollbar-width: none;
-        
-    }
+        scrollbar-width: none;  
+        /* background: red; */
+    }   
 
     .content {
         grid-area: main;
@@ -233,4 +235,42 @@ video {
         font-size: 60px;
         color: aliceblue;
     }
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
 }
