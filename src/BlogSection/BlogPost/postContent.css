@@ -9,3 +9,29 @@
     align-items: start;
 }
 
+.textBody {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+    font-size: 18px;
+
+
+}
+
+.textBodyHighlighted {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+}
+
+.textHeadline {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    font-size: 20px;
+    text-decoration: underline;
+
+}
