@@ -10,12 +10,10 @@
 .blogCardContainer {
     width: 100%;
 
-    display: grid;
+    display: flex;
     padding: 0 20px;
-    grid-template-columns: auto auto auto;
+    flex-direction: column;
     gap: 20px;
-
-
 
 }
 
@@ -69,12 +67,22 @@ figcaption {
 /* If Screen Is Wide Enough */
 @media(min-width:1000px) {
     .blogCard {
-    width: 25vw;
-    height: 60vh;
-    border-radius: 25px;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
+        width: 25vw;
+        height: 60vh;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .blogCardContainer {
+        width: 100%;
+
+        display: grid;
+        padding: 0 20px;
+        grid-template-columns: auto auto auto;
+        gap: 20px;
+    }
 
 }
 
@@ -83,17 +91,17 @@ figcaption {
     height: 100%;
     margin-bottom: 20px;
 }
-    .blogHeaderText {
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        /* color: aliceblue; */
-        color: aliceblue;
-        font-size: 20px;
-    }
 
-    .blogBodyText {
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        /* color: aliceblue; */
-        color: aliceblue;
-        font-size: 18px;
-    }
+.blogHeaderText {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* color: aliceblue; */
+    color: aliceblue;
+    font-size: 20px;
+}
+
+.blogBodyText {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* color: aliceblue; */
+    color: aliceblue;
+    font-size: 18px;
 }
